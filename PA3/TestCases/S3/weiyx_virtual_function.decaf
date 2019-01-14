@@ -1,0 +1,27 @@
+class Father
+{
+	int height;
+	void print()
+	{
+		Print("Father\n");
+	}
+}
+
+class Son extends Father
+{
+	int age;
+	void print()
+	{
+		Print("Son\n");
+	}
+}
+
+class Main
+{
+	static void main()
+	{
+		class Father obj;
+		obj = new Son();
+		obj.print();
+	}
+}

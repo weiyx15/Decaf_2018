@@ -1,0 +1,9 @@
+class Main {
+    static void main() {  
+        int x[], y;
+    }
+	
+	static void main() {
+		int x = 1;
+	}
+}

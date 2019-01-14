@@ -1,0 +1,55 @@
+class A {
+    int a;
+    void seta(int a){
+    	this.a = a;
+    }
+    int getA(){
+    	return a;
+    }
+}
+
+class Father {
+    int field;
+    class A a;
+    void setfield(int f) {
+        this.field = f;
+		this.a = new A();
+    }
+	void setOnlyfiled(int f) {
+		this.field = f;
+	}
+	int getfield()
+	{
+		return this.field;
+	}
+    void seta(int a) {
+        this.a.seta(a);
+    }
+    int getA() {
+        this.a.getA();
+    }
+}
+
+class Main
+{
+	static void main()
+	{
+		class Father a;
+		class Father b;
+		b = new Father();
+		b.setfield(1);
+		b.seta(2);
+		scopy(a,b);
+		Print(b.getfield());
+		Print(a.getfield());
+		Print(b.getA());
+		Print(a.getA());
+		Print("\n");
+		b.seta(4);
+		b.setOnlyfiled(3);
+		Print(b.getfield());
+		Print(a.getfield());
+		Print(b.getA());
+		Print(a.getA());
+	}
+}

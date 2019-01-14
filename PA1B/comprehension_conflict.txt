@@ -1,0 +1,20 @@
+Buildfile: D:\PA1B\build.xml
+prepare:
+1 table generation:
+     [java] Warning: conflict productions at line 619:
+     [java] Expr8 -> Expr9 ExprT8
+     [java] Expr8 -> '[' Expr FOR IDENTIFIER IN Expr IfCompreClause
+     [java] Warning: conflict productions at line 885:
+     [java] ElseClause -> ELSE Stmt
+     [java] ElseClause -> <empty>
+     [java] Warning: unreachable production:
+     [java] Expr8 -> '[' Expr FOR IDENTIFIER IN Expr IfCompreClause
+     [java] predictive set is empty
+     [java] Parser is successfully generated and written to "D:\PA1B\src\decaf\frontend\Table.java"
+2 compile:
+    [javac] D:\PA1B\build.xml:33: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to D:\PA1B\result\bin
+3 pack:
+      [jar] Building jar: D:\PA1B\result\decaf.jar
+BUILD SUCCESSFUL
+Total time: 7 seconds

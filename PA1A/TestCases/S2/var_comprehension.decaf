@@ -1,0 +1,7 @@
+class Main
+{
+	static void main()
+	{
+		var arr = [x+1 for x in [4,5,6,7] if x > 5];
+	}
+}
